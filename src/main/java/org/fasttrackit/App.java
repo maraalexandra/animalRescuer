@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import java.util.Date;
+
 /**
  * Hello world!
  *
@@ -13,10 +15,11 @@ public class App
         Animal animalReference = new Animal();
         animalReference.name = "Izzy";
         animalReference.age = 4;
-        animalReference.health = 10;
-        animalReference.hungerness = 1-10;
-        animalReference.mood = 1-10;
+        animalReference.healthLevel = 1-10;
+        animalReference.hungerLevel = 1-10;
+        animalReference.moodLevel = 1-10;
         animalReference.favouriteGame = "Toy";
+        animalReference.favouriteFood = "Beef";
 
         Rescuer rescuerReference = new Rescuer();
         rescuerReference.name = "Mara";
@@ -25,7 +28,8 @@ public class App
         Food foodReference = new Food();
         foodReference.name = "Advance";
         foodReference.price = 50;
-        foodReference.expirationDate = 2022;
+
+        foodReference.expirationDate = new Date(2022, 6, 26);
         foodReference.disponibility = true;
 
         Activity activityReference = new Activity();
