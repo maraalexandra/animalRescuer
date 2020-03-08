@@ -8,16 +8,15 @@ import java.util.Date;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello AnimalRescuer!" );
+    public static void main( String[] args ) {
+        System.out.println("Hello AnimalRescuer!");
 
         Animal animalReference = new Animal();
         animalReference.name = "Izzy";
         animalReference.age = 4;
-        animalReference.healthLevel = 1-10;
-        animalReference.hungerLevel = 1-10;
-        animalReference.moodLevel = 1-10;
+        animalReference.healthLevel = 1 - 10;
+        animalReference.hungerLevel = -9;
+        animalReference.moodLevel = 1 - 10;
         animalReference.favouriteGame = "Toy";
         animalReference.favouriteFood = "Beef";
 
@@ -37,7 +36,14 @@ public class App
 
         Vet vetReference = new Vet();
         vetReference.name = "Jack";
-        vetReference.degree= "Veterinary";
+        vetReference.degree = "Veterinary";
+        Game gameReference = new Game;
+        gameReference.animal = "Dog";
+        gameReference.Rescuer = "Mara";
+        gameReference.Vet = "Jack";
+
+
+
 
 
 
