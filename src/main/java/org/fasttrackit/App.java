@@ -1,5 +1,6 @@
 package org.fasttrackit;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -14,9 +15,9 @@ public class App
         Animal animalReference = new Animal();
         animalReference.name = "Izzy";
         animalReference.age = 4;
-        animalReference.healthLevel = 1 - 10;
-        animalReference.hungerLevel = -9;
-        animalReference.moodLevel = 1 - 10;
+        animalReference.healthLevel = 10;
+        animalReference.hungerLevel = 5;
+        animalReference.moodLevel =  10;
         animalReference.favouriteGame = "Toy";
         animalReference.favouriteFood = "Beef";
 
@@ -27,8 +28,12 @@ public class App
         Food foodReference = new Food();
         foodReference.name = "Advance";
         foodReference.price = 50;
+        foodReference.expirationDate =  LocalDate.of(2022, 10, 2);
+        foodReference.quantity = 10;
 
-        foodReference.expirationDate = new Date(2022, 6, 26);
+
+
+
         foodReference.disponibility = true;
 
         Activity activityReference = new Activity();
@@ -37,10 +42,9 @@ public class App
         Vet vetReference = new Vet();
         vetReference.name = "Jack";
         vetReference.degree = "Veterinary";
-        Game gameReference = new Game;
-        gameReference.animal = "Dog";
-        gameReference.Rescuer = "Mara";
-        gameReference.Vet = "Jack";
+        Game gameReference = new Game();
+
+
 
 
 
