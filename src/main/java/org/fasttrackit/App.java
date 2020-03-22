@@ -25,11 +25,14 @@ public class App
         rescuerReference.name = "Mara";
         rescuerReference.budget = 100;
 
+
         Food foodReference = new Food("Advance", 50, 10);
         foodReference.name = "Advance";
         foodReference.price = 50;
         foodReference.expirationDate =  LocalDate.of(2022, 10, 2);
         foodReference.quantity = 10;
+
+        rescuerReference.feed(animalReference, foodReference);
 
 
 
@@ -38,6 +41,8 @@ public class App
 
         Activity activityReference = new Activity("Running");
         activityReference.name = "Running";
+
+        rescuerReference.play(animalReference, activityReference);
 
         Vet vetReference = new Vet("Jack");
         vetReference.name = "Jack";
@@ -53,21 +58,6 @@ public class App
          dog.bite = false;
 
 
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    } }
+}
