@@ -5,4 +5,6 @@ public class Rescuer {
     String name;
     int budget;
 
+
+
 }

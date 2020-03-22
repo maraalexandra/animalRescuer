@@ -9,8 +9,6 @@ public class Animal {
     int moodLevel;
     String favouriteFood;
     String favouriteGame;
-    
-
 
 
 }

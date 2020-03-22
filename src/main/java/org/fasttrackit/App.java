@@ -44,6 +44,23 @@ public class App
         vetReference.degree = "Veterinary";
         Game gameReference = new Game();
 
+         MyPet myPet = new MyPet();
+         myPet.color = "White and Brown";
+         myPet.weight = 10;
+
+
+         Dog dog = new Dog();
+         dog.bite = false;
+
+
+
+
+
+
+
+
+
+
 
 
 
