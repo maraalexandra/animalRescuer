@@ -10,5 +10,10 @@ public class Animal {
     String favouriteFood;
     String favouriteGame;
 
+    public Animal(String name, String favouriteFood, String favouriteGame) {
+        this.name = name;
+        this.favouriteFood = favouriteFood;
+        this.favouriteGame = favouriteGame;
+    }
 
 }

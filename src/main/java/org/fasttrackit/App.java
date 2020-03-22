@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args ) {
         System.out.println("Hello AnimalRescuer!");
 
-        Animal animalReference = new Animal();
+        Animal animalReference = new Animal("Izzy", "Beef", "Toy");
         animalReference.name = "Izzy";
         animalReference.age = 4;
         animalReference.healthLevel = 10;
@@ -21,11 +21,11 @@ public class App
         animalReference.favouriteGame = "Toy";
         animalReference.favouriteFood = "Beef";
 
-        Rescuer rescuerReference = new Rescuer();
+        Rescuer rescuerReference = new Rescuer("Mara");
         rescuerReference.name = "Mara";
         rescuerReference.budget = 100;
 
-        Food foodReference = new Food();
+        Food foodReference = new Food("Advance", 50, 10);
         foodReference.name = "Advance";
         foodReference.price = 50;
         foodReference.expirationDate =  LocalDate.of(2022, 10, 2);
@@ -36,20 +36,20 @@ public class App
 
         foodReference.disponibility = true;
 
-        Activity activityReference = new Activity();
+        Activity activityReference = new Activity("Running");
         activityReference.name = "Running";
 
-        Vet vetReference = new Vet();
+        Vet vetReference = new Vet("Jack");
         vetReference.name = "Jack";
         vetReference.degree = "Veterinary";
         Game gameReference = new Game();
 
-         MyPet myPet = new MyPet();
+         MyPet myPet = new MyPet("Yogo", "Beef", "Toy");
          myPet.color = "White and Brown";
          myPet.weight = 10;
 
 
-         Dog dog = new Dog();
+         Dog dog = new Dog("Izzy", "Beef", "Running");
          dog.bite = false;
 
 

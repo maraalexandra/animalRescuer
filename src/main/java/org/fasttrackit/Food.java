@@ -7,10 +7,14 @@ public class Food {
 
     String name;
     int price;
-    LocalDate expirationDate ;
+    LocalDate expirationDate;
     boolean disponibility;
     int quantity;
 
-
+    public Food(String name, int price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
     }
+}
 

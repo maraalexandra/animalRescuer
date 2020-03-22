@@ -6,5 +6,7 @@ public class MyPet extends Animal {
     String color;
 
 
-
+    public MyPet(String name, String favouriteFood, String favouriteGame) {
+        super(name, favouriteFood, favouriteGame);
+    }
 }
