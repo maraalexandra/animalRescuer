@@ -16,24 +16,19 @@ public class Rescuer {
 
         animal.hungerLevel = 1;
 
-        if (animal.favouriteFood == food.name);
+        if (animal.favouriteFood.equals(food.name)) {
 
-        animal.moodLevel = 1;
+            animal.moodLevel = 1;
+        }
 
+        }
 
+        public void play(Animal animal, Activity activity){
+            System.out.println(name + " is " + activity.name + " with " + animal.name);
+
+            if (animal.favouriteGame.equals(activity.name)){
+
+            }
+
+        }
     }
-
-    public void play(Animal animal, Activity activity) {
-
-        System.out.println(name + " is " + activity.name + " with " + animal.name);
-
-        animal.moodLevel = 1;
-
-        if (animal.favouriteGame == activity.name);
-
-        animal.moodLevel = 1;
-
-
-    }
-
-}

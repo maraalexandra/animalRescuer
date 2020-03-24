@@ -21,6 +21,9 @@ public class App
         animalReference.favouriteGame = "Toy";
         animalReference.favouriteFood = "Beef";
 
+        Cat cat = new Cat("Lilu", "Mouse", "Scratch");
+        cat.lifes = 9;
+
         Rescuer rescuerReference = new Rescuer("Mara");
         rescuerReference.name = "Mara";
         rescuerReference.budget = 100;
@@ -49,9 +52,6 @@ public class App
         vetReference.degree = "Veterinary";
         Game gameReference = new Game();
 
-         MyPet myPet = new MyPet("Yogo", "Beef", "Toy");
-         myPet.color = "White and Brown";
-         myPet.weight = 10;
 
 
          Dog dog = new Dog("Izzy", "Beef", "Running");
