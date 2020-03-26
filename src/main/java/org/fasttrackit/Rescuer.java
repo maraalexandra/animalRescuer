@@ -14,11 +14,10 @@ public class Rescuer {
 
         System.out.println(name + " just gave some " + food.name + " food to " + animal.name);
 
-        animal.hungerLevel = 1;
 
         if (animal.favouriteFood.equals(food.name)) {
 
-            animal.moodLevel = 1;
+            animal.hungerLevel++ ;
         }
 
         }
@@ -27,6 +26,8 @@ public class Rescuer {
             System.out.println(name + " is " + activity.name + " with " + animal.name);
 
             if (animal.favouriteGame.equals(activity.name)){
+
+                animal.moodLevel=+2;
 
             }
 
