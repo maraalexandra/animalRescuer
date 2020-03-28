@@ -13,49 +13,49 @@ public class App
         System.out.println("Hello AnimalRescuer!");
 
         Animal animalReference = new Animal("Izzy", "Beef", "Toy");
-        animalReference.name = "Izzy";
-        animalReference.age = 4;
-        animalReference.healthLevel = 10;
-        animalReference.hungerLevel = 5;
-        animalReference.moodLevel =  10;
-        animalReference.favouriteGame = "Toy";
-        animalReference.favouriteFood = "Beef";
+        animalReference.setName("Izzy");
+        animalReference.setAge(4);
+        animalReference.setHealthLevel(10);
+        animalReference.setHungerLevel(5);
+        animalReference.setMoodLevel(10);
+        animalReference.setFavouriteGame("Toy");
+        animalReference.setFavouriteFood("Beef");
 
         Cat cat = new Cat("Lilu", "Mouse", "Scratch");
-        cat.lifes = 9;
+        boolean purrs = true;
 
         Rescuer rescuerReference = new Rescuer("Mara");
-        rescuerReference.name = "Mara";
-        rescuerReference.budget = 100;
+        rescuerReference.setName("Mara");
+        rescuerReference.setBudget(100);
 
 
         Food foodReference = new Food("Advance", 50, 10);
-        foodReference.name = "Advance";
-        foodReference.price = 50;
-        foodReference.expirationDate =  LocalDate.of(2022, 10, 2);
-        foodReference.quantity = 10;
+        foodReference.setName("Advance");
+        foodReference.setPrice(50);
+        foodReference.setExpirationDate( LocalDate.of(2022, 10, 2));
+        foodReference.setQuantity(10);
 
         rescuerReference.feed(animalReference, foodReference);
 
 
 
 
-        foodReference.disponibility = true;
+        foodReference.setDisponibility(true);
 
         Activity activityReference = new Activity("Running");
-        activityReference.name = "Running";
+        activityReference.setName("Running");
 
         rescuerReference.play(animalReference, activityReference);
 
         Vet vetReference = new Vet("Jack");
-        vetReference.name = "Jack";
-        vetReference.degree = "Veterinary";
+        vetReference.setName("Jack");
+        vetReference.setDegree("Veterinary");
         Game gameReference = new Game();
 
 
 
          Dog dog = new Dog("Izzy", "Beef", "Running");
-         dog.bite = false;
+         dog.setBite(false);
 
 
     }
