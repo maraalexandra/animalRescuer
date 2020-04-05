@@ -5,6 +5,11 @@ public class Cat extends Animal {
 
     private boolean purrs;
 
+    @Override
+    public void showingHappinessState() {
+        System.out.println("This cat is purring");
+
+    }
 
     public Cat(String name, String favouriteFood, String favouriteGame){
 

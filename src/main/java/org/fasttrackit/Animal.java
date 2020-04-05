@@ -2,19 +2,25 @@ package org.fasttrackit;
 
 public class Animal {
 
-    private String name;
-    private int age;
-    private int healthLevel;
-    private int hungerLevel;
-    private int moodLevel;
-    private String favouriteFood;
-    private String favouriteGame;
+    String name;
+    int age;
+    int healthLevel;
+    int hungerLevel;
+    int moodLevel;
+    String favouriteFood;
+    String favouriteGame;
 
     public Animal(String name, String favouriteFood, String favouriteGame) {
         this.name = name;
         this.favouriteFood = favouriteFood;
         this.favouriteGame = favouriteGame;
+
     }
+     public void showingHappinessState(){
+            System.out.println("This animal is waving the tail");
+
+        }
+
 
     public String getName() {
         return name;

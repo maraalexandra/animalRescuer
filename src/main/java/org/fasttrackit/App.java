@@ -21,8 +21,12 @@ public class App
         animalReference.setFavouriteGame("Toy");
         animalReference.setFavouriteFood("Beef");
 
+        animalReference.showingHappinessState();
+
         Cat cat = new Cat("Lilu", "Mouse", "Scratch");
         boolean purrs = true;
+
+        cat.showingHappinessState();
 
         Rescuer rescuerReference = new Rescuer("Mara");
         rescuerReference.setName("Mara");
@@ -57,6 +61,7 @@ public class App
          Dog dog = new Dog("Izzy", "Beef", "Running");
          dog.setBite(false);
 
+         dog.showingHappinessState();
 
     }
 
